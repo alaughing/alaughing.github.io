@@ -3,18 +3,15 @@
 
 
     
-    
-    
-    
   <url>
-    <loc>http://yoursite.com/2017/01/22/happy%20new%20year/</loc>
-    <lastmod>2017-01-22T13:25:58.017Z</lastmod>
+    <loc>http://yoursite.com/2017/01/22/hexo%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E4%B8%A2%E5%A4%B1%EF%BC%8C%E5%8F%AA%E5%89%A9GitHub%E7%94%9F%E6%88%90%E7%9A%84%E6%96%87%E7%AB%A0%EF%BC%8C%E5%A6%82%E4%BD%95%E8%87%AA%E6%95%91/</loc>
+    <lastmod>2017-01-22T19:48:57.612Z</lastmod>
     <data>
         <display>
-        <title>happy new year</title>
+        <title>在hexo本地文件丢失，只剩GitHub生成的文章，如何自救?</title>
         <pubTime>2017-01-21T16:14:57.000Z</pubTime>
         
-        <tag>other</tag>
+        <tag>blog</tag>
          
          
            
@@ -22,6 +19,9 @@
     </data>
     </url>
 
+    
+    
+    
     
   <url>
     <loc>http://yoursite.com/2016/07/29/Half-a-year-summmary/</loc>
