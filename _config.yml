@@ -65,6 +65,7 @@ pagination_dir: page
 plugins: hexo-generator-feed
 ## Themes: https://hexo.io/themes/
 theme: next
+duoshuo_shortname: alaughing
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -86,4 +87,3 @@ backup:
        github: git@github.com:alaughing/alaughing.github.io.git,hexo
        #gitcafe: git@github.com:xxx/xxx.git,branchName
 
-duoshuo_shortname: alaughing
