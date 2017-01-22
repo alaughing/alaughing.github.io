@@ -100,7 +100,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post"},
+    sidebar: {"position":"right","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -141,7 +141,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -271,6 +271,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/29/what-the-fuck/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/29/what-the-fuck/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -366,6 +373,10 @@
 
           
   <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/29/what-the-fuck/"
+           data-title="what the fuck" data-url="http://yoursite.com/2016/04/29/what-the-fuck/">
+      </div>
     
   </div>
 
@@ -589,9 +600,28 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"alaughing"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
   
+    
+  
+
+
 
 
 
