@@ -7,9 +7,9 @@ tags: other
 
 # [](#团队 "团队")团队
 
-    3月份时候，想搞一个团队，结果只有一个好的开始，弄成了半成品
+`3月份时候，想搞一个团队，结果只有一个好的开始，弄成了半成品`
 
-<a id="more"></a>
+<!--more-->
 
 # [](#技术 "技术")技术
 
@@ -23,5 +23,6 @@ tags: other
 *   [目标](https://www.sec-wiki.com/skill/2)
 *   [技能树](http://blog.knownsec.com/Knownsec_RD_Checklist/index.html)
 *   [天赋](http://www.xiaoshuwu.net/skill/#_ab_4_ID)
+
 觉得资源不够的或者有疑问的欢迎留言。。
     

@@ -5,5 +5,6 @@ tags: other
 ---
 # Ha1oS3c
 
-![](http://ok508kqsu.bkt.clouddn.com/%E5%AE%89%E5%85%A8%E5%B0%8F%E7%BB%84Logo.png)
+<!--more-->
+![](http://ok508kqsu.bkt.clouddn.com/Logo.png)
 

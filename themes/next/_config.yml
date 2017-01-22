@@ -158,8 +158,8 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
@@ -231,7 +231,7 @@ mathjax:
 baidu_analytics: 5ce3fea1950f04b9ce7a306f205b68e6
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: alaughing
 
 # Disqus
 #disqus_shortname:
