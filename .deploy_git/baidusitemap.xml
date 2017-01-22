@@ -3,9 +3,12 @@
 
 
     
+    
+    
+    
   <url>
     <loc>http://yoursite.com/2017/01/22/happy%20new%20year/</loc>
-    <lastmod>2017-01-22T05:35:07.949Z</lastmod>
+    <lastmod>2017-01-22T13:25:58.017Z</lastmod>
     <data>
         <display>
         <title>happy new year</title>
@@ -20,7 +23,22 @@
     </url>
 
     
-    
+  <url>
+    <loc>http://yoursite.com/2016/07/29/Half-a-year-summmary/</loc>
+    <lastmod>2017-01-22T13:07:42.485Z</lastmod>
+    <data>
+        <display>
+        <title>Half a year summmary</title>
+        <pubTime>2016-07-29T00:40:05.000Z</pubTime>
+        
+        <tag>other</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://yoursite.com/2016/04/29/what-the-fuck/</loc>
@@ -38,22 +56,4 @@
     </data>
     </url>
 
-    
-  <url>
-    <loc>http://yoursite.com/2016/07/29/Half-a-year-summmary/</loc>
-    <lastmod>2017-01-22T00:44:20.780Z</lastmod>
-    <data>
-        <display>
-        <title>Half a year summmary</title>
-        <pubTime>2016-07-29T00:40:05.000Z</pubTime>
-        
-        <tag>other</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
 </urlset>

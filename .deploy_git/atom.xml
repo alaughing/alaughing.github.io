@@ -1,66 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Laughing</title>
-  <subtitle>Network|Security</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-08T01:33:28.435Z</updated>
+  <updated>2017-01-22T13:25:58.017Z</updated>
   <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Laughing</name>
+    
+  </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Half a year summary</title>
-    <link href="http://yoursite.com/2016/07/29/Half-a-year-summary/"/>
-    <id>http://yoursite.com/2016/07/29/Half-a-year-summary/</id>
-    <published>2016-07-29T01:13:19.000Z</published>
-    <updated>2016-08-08T01:33:28.435Z</updated>
+    <title>happy new year</title>
+    <link href="http://yoursite.com/2017/01/22/happy%20new%20year/"/>
+    <id>http://yoursite.com/2017/01/22/happy new year/</id>
+    <published>2017-01-21T16:14:57.000Z</published>
+    <updated>2017-01-22T13:25:58.017Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;团队&quot;&gt;&lt;a href=&quot;#团队&quot; class=&quot;headerlink&quot; title=&quot;团队&quot;&gt;&lt;/a&gt;团队&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;3月份时候，想搞一个团队，结果只有一个好的开始，弄成了半成品
-&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;技术&quot;&gt;&lt;a href=&quot;#技术&quot; class=&quot;headerlink&quot; title=&quot;技术&quot;&gt;&lt;/a&gt;技术&lt;/h1&gt;&lt;p&gt;4月份学了WebGoat，5月份看了kali视频，6月份从爬虫入门学了Python，做了攻防实验室的题目&lt;a href=&quot;http://hackinglab.cn/index.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://hackinglab.cn/index.php&lt;/a&gt;不得不承认这是个很好的学习网站，好资源就不要浪费了。参加过一些小型的攻防比赛，并取得了不错的成绩，但这并不意味着什么，7月份参加了一个全国大学生信息安全比赛才发现自己的差距还有那么大。路虽远，行必达。&lt;/p&gt;
-&lt;h1 id=&quot;学习、生活、情感&quot;&gt;&lt;a href=&quot;#学习、生活、情感&quot; class=&quot;headerlink&quot; title=&quot;学习、生活、情感&quot;&gt;&lt;/a&gt;学习、生活、情感&lt;/h1&gt;&lt;p&gt;这半年来，日子过得比较单调，但胜在自由自在，无事外出采风，学习三点一线。有一晚，网安小组的师兄找我们出去谈心，谈完之后我总想着是应该留点什么给师弟师妹们，奈何自身才疏学浅，大概只能说说自己的经历，以互勉促进。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://bar.freebuf.com/comment/10754&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;入门&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.sec-wiki.com/skill/2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;目标&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.knownsec.com/Knownsec_RD_Checklist/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;技能树&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.xiaoshuwu.net/skill/#_ab_4_ID&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;天赋&lt;/a&gt;&lt;br&gt;觉得资源不够的或者有疑问的欢迎留言。。&lt;/li&gt;
-&lt;/ul&gt;
-</content>
+    <content type="html"><![CDATA[<h1 id="Ha1oS3c"><a href="#Ha1oS3c" class="headerlink" title="Ha1oS3c"></a>Ha1oS3c</h1><a id="more"></a>
+<p><img src="http://ok508kqsu.bkt.clouddn.com/Logo.png" alt=""></p>
+]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;团队&quot;&gt;&lt;a href=&quot;#团队&quot; class=&quot;headerlink&quot; title=&quot;团队&quot;&gt;&lt;/a&gt;团队&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;3月份时候，想搞一个团队，结果只有一个好的开始，弄成了半成品
-&lt;/code&gt;&lt;/pre&gt;
+      &lt;h1 id=&quot;Ha1oS3c&quot;&gt;&lt;a href=&quot;#Ha1oS3c&quot; class=&quot;headerlink&quot; title=&quot;Ha1oS3c&quot;&gt;&lt;/a&gt;Ha1oS3c&lt;/h1&gt;
     
     </summary>
     
     
-      <category term="others" scheme="http://yoursite.com/tags/others/"/>
+      <category term="other" scheme="http://yoursite.com/tags/other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Half a year summmary</title>
+    <link href="http://yoursite.com/2016/07/29/Half-a-year-summmary/"/>
+    <id>http://yoursite.com/2016/07/29/Half-a-year-summmary/</id>
+    <published>2016-07-29T00:40:05.000Z</published>
+    <updated>2017-01-22T13:07:42.485Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="团队"><a href="#团队" class="headerlink" title="团队"></a><a href="#团队" title="团队"></a>团队</h1><p><code>3月份时候，想搞一个团队，结果只有一个好的开始，弄成了半成品</code></p>
+<a id="more"></a>
+<h1 id="技术"><a href="#技术" class="headerlink" title="技术"></a><a href="#技术" title="技术"></a>技术</h1><p>4月份学了WebGoat，5月份看了kali视频，6月份从爬虫入门学了Python，做了攻防实验室的题目<a href="http://hackinglab.cn/index.php" target="_blank" rel="external">http://hackinglab.cn/index.php</a>不得不承认这是个很好的学习网站，好资源就不要浪费了。参加过一些小型的攻防比赛，并取得了不错的成绩，但这并不意味着什么，7月份参加了一个全国大学生信息安全比赛才发现自己的差距还有那么大。路虽远，行必达。</p>
+<h1 id="学习、生活、情感"><a href="#学习、生活、情感" class="headerlink" title="学习、生活、情感"></a><a href="#学习、生活、情感" title="学习、生活、情感"></a>学习、生活、情感</h1><p>这半年来，日子过得比较单调，但胜在自由自在，无事外出采风，学习三点一线。有一晚，网安小组的师兄找我们出去谈心，谈完之后我总想着是应该留点什么给师弟师妹们，奈何自身才疏学浅，大概只能说说自己的经历，以互勉促进。</p>
+<ul>
+<li><a href="http://bar.freebuf.com/comment/10754" target="_blank" rel="external">入门</a></li>
+<li><a href="https://www.sec-wiki.com/skill/2" target="_blank" rel="external">目标</a></li>
+<li><a href="http://blog.knownsec.com/Knownsec_RD_Checklist/index.html" target="_blank" rel="external">技能树</a></li>
+<li><a href="http://www.xiaoshuwu.net/skill/#_ab_4_ID" target="_blank" rel="external">天赋</a></li>
+</ul>
+<p>觉得资源不够的或者有疑问的欢迎留言。。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;团队&quot;&gt;&lt;a href=&quot;#团队&quot; class=&quot;headerlink&quot; title=&quot;团队&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#团队&quot; title=&quot;团队&quot;&gt;&lt;/a&gt;团队&lt;/h1&gt;&lt;p&gt;&lt;code&gt;3月份时候，想搞一个团队，结果只有一个好的开始，弄成了半成品&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="other" scheme="http://yoursite.com/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>what the fuck</title>
-    <link href="http://yoursite.com/2016/04/19/what-the-fuck/"/>
-    <id>http://yoursite.com/2016/04/19/what-the-fuck/</id>
-    <published>2016-04-19T05:53:40.000Z</published>
-    <updated>2016-07-29T06:27:08.636Z</updated>
+    <link href="http://yoursite.com/2016/04/29/what-the-fuck/"/>
+    <id>http://yoursite.com/2016/04/29/what-the-fuck/</id>
+    <published>2016-04-29T00:40:34.000Z</published>
+    <updated>2017-01-22T00:44:22.650Z</updated>
     
-    <content type="html">&lt;h3 id=&quot;仍须努力&quot;&gt;&lt;a href=&quot;#仍须努力&quot; class=&quot;headerlink&quot; title=&quot;仍须努力&quot;&gt;&lt;/a&gt;仍须努力&lt;/h3&gt;&lt;p&gt;此篇初念博客建设成功&lt;/p&gt;
-&lt;p&gt;参考并感谢：&lt;a href=&quot;http://www.angoddess.cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.angoddess.cn&lt;/a&gt;&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<h3 id="仍须努力"><a href="#仍须努力" class="headerlink" title="仍须努力"></a><a href="#仍须努力" title="仍须努力"></a>仍须努力</h3><p>此篇初念博客建设成功</p>
+<p>参考并感谢：<a href="http://www.angoddess.cn" target="_blank" rel="external">http://www.angoddess.cn</a></p>
+]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;仍须努力&quot;&gt;&lt;a href=&quot;#仍须努力&quot; class=&quot;headerlink&quot; title=&quot;仍须努力&quot;&gt;&lt;/a&gt;仍须努力&lt;/h3&gt;&lt;p&gt;此篇初念博客建设成功&lt;/p&gt;
-&lt;p&gt;参考并感谢：&lt;a href=&quot;http://www.angoddess.cn&quot; targ
+      &lt;h3 id=&quot;仍须努力&quot;&gt;&lt;a href=&quot;#仍须努力&quot; class=&quot;headerlink&quot; title=&quot;仍须努力&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#仍须努力&quot; title=&quot;仍须努力&quot;&gt;&lt;/a&gt;仍须努力&lt;/h3&gt;&lt;p&gt;此篇初念博客建设成功&lt;/p&gt;
+&lt;p&gt;参考并感谢：&lt;a hr
     
     </summary>
     
     
-      <category term="others" scheme="http://yoursite.com/tags/others/"/>
+      <category term="other" scheme="http://yoursite.com/tags/other/"/>
     
   </entry>
   
