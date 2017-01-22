@@ -82,5 +82,5 @@ baidusitemap:
 backup:
     type: git
     repository:
-       github: http://github.com/alaughing/alaughing.github.io.git,hexo
+       github: git@github.com:alaughing/alaughing.github.io.git,hexo
        #gitcafe: git@github.com:xxx/xxx.git,branchName
