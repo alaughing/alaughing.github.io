@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/01/22/happy%20new%20year/</loc>
+    <lastmod>2017-01-22T05:35:07.949Z</lastmod>
+    <data>
+        <display>
+        <title>happy new year</title>
+        <pubTime>2017-01-21T16:14:57.000Z</pubTime>
+        
+        <tag>other</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
+    <loc>http://yoursite.com/2016/04/29/what-the-fuck/</loc>
+    <lastmod>2017-01-22T00:44:22.650Z</lastmod>
+    <data>
+        <display>
+        <title>what the fuck</title>
+        <pubTime>2016-04-29T00:40:34.000Z</pubTime>
+        
+        <tag>other</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/29/Half-a-year-summmary/</loc>
+    <lastmod>2017-01-22T00:44:20.780Z</lastmod>
+    <data>
+        <display>
+        <title>Half a year summmary</title>
+        <pubTime>2016-07-29T00:40:05.000Z</pubTime>
+        
+        <tag>other</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+</urlset>
