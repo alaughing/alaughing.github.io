@@ -35,7 +35,7 @@ tags: blog
 # 0x02
 安装插件:
 
-npm install **\<plugin-name\>** --save  
+npm install **plugin-name** --save  
 
 rss插件hexo-generator-feed，将上述命令中的『plugin-name』，替换为hexo-generator-feed。
 
