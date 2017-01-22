@@ -1,2 +1,0 @@
-Sitemap: http://www.arao.me/sitemap.xml
-Sitemap: http://www.arao.me/baidusitemap.xml

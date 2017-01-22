@@ -3,15 +3,13 @@
 
 
     
-    
-    
   <url>
-    <loc>http://yoursite.com/2016/11/22/happy%20new%20year/</loc>
-    <lastmod>2017-01-22T00:44:24.529Z</lastmod>
+    <loc>http://yoursite.com/2017/01/22/happy%20new%20year/</loc>
+    <lastmod>2017-01-22T05:35:07.949Z</lastmod>
     <data>
         <display>
         <title>happy new year</title>
-        <pubTime>2016-11-21T16:14:57.000Z</pubTime>
+        <pubTime>2017-01-21T16:14:57.000Z</pubTime>
         
         <tag>other</tag>
          
@@ -55,4 +53,5 @@
     </data>
     </url>
 
+    
 </urlset>
