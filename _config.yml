@@ -82,9 +82,8 @@ baidusitemap:
 # https://github.com/coneycode/hexo-git-backup
 backup:
     type: git
-    repository: http://github.com/alaughing/alaughing.github.io.git,hexo
-
-       #github: git@github.com:alaughing/alaughing.github.io.git,hexo
+    repository:
+       github: git@github.com:alaughing/alaughing.github.io.git,hexo
        #gitcafe: git@github.com:xxx/xxx.git,branchName
 
 duoshuo_shortname: alaughing
