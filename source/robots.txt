@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://alaughing.top/sitemap.xml
+Sitemap: http://alaughing.top/baidusitemap.xml

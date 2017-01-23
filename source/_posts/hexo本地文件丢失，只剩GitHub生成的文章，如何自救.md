@@ -1,5 +1,5 @@
 ---
-title: 在hexo本地文件丢失，只剩GitHub生成的文章，如何自救?
+title: hexo本地文件丢失，只剩GitHub生成的文章，如何自救?
 date: 2017-1-22 00:14:57
 tags: blog
 ---
@@ -26,7 +26,7 @@ tags: blog
 
 ![](http://ok508kqsu.bkt.clouddn.com/deploy.png)
 
-再配下站点地图。需要安装hexo 
+再配下站点地图(需要安装hexo插件)。 
 
 ![](http://ok508kqsu.bkt.clouddn.com/sitemap.png)
 
@@ -54,15 +54,12 @@ duoshuo_shortname(e.g. 注册了fuck.duoshuo.com,那么只填写fuck就行了)�
 ![](http://ok508kqsu.bkt.clouddn.com/tb.png)
 
 # 0x04 
-
-为了加快图片加载速度，我使用了图床[七牛](www.qiniu.com)，有配送免费空间，对我来说已经足够了。
+为了加快图片加载速度，我使用了图床[七牛](https://portal.qiniu.com/signin)，有配送免费空间，对我来说已经足够了。
 
 # 总结
-
 嗯好像该搞的已经搞了，至于其他那些花销功能我没弄，看需求吧，有需要再继续添加，就这样写着博客先，希望能够坚持下去。中途查了好多资料，看得差不多崩溃。但熟悉了git命令和markdown语法，还打造了sublime3来写md文件，也算有些收获，最后提醒各位每次部署完都尽量用git分支做好备份，没事就不要hexo init了。否则博客数量多的时候就只能呵呵了，想救都有心无力哈，时间应该用在刀刃上。
 
 # 参考:
-
 [hexo你的博客](http://ibruce.info/2013/11/22/hexo-your-blog/)
 [hexo-git-backup](https://github.com/coneycode/hexo-git-backup)
 [介绍Sublime3下两款Markdown插件](http://www.jianshu.com/p/335b7d1be39e)
